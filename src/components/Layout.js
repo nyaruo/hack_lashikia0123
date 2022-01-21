@@ -53,7 +53,7 @@ const Layout = () => {
                 <Outlet />
             </main>
             {location.pathname === '/' ? null : <Link to="/">Top</Link>}
-            <footer className="bg-gray-400 w-screen absolute bottom-0 h-14">
+            <footer className="bg-gray-400 w-screen bottom-0 h-14">
                 <div className="flex justify-center items-center">
                     <p className="pt-3">{serviceName}@2021</p>
                 </div>
