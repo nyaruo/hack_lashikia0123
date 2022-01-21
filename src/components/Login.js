@@ -6,6 +6,7 @@ const Login = () => {
     const { serviceName, isLogin, setIsLogin } = useStateContext()
     const navigate = useNavigate()
     const login = () => {
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         setIsLogin((prevLogin) => (prevLogin = true))
         navigate('/')
     }
