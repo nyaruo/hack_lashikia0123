@@ -3,7 +3,7 @@ import { useStateContext } from '../context/StateProvider'
 import Unity, { UnityContent } from 'react-unity-webgl';
 
 const unityContent = new UnityContent(
-    'Build/sample2.json',
+    'Build/SNS_stamp.json',
     'Build/UnityLoader.js'
 );
 
