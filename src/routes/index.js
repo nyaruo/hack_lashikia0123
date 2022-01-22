@@ -2,6 +2,7 @@ import ComponentA from '../components/ComponentA'
 import Layout from '../components/Layout'
 import Login from '../components/Login'
 import Root from '../components/Root'
+import SignUp from '../components/SignUp'
 
 export const routePath = [
     { path: '/login', element: <Login /> },
@@ -16,6 +17,10 @@ export const routePath = [
             {
                 path: '/component-a',
                 element: <ComponentA />,
+            },
+            {
+                path: '/signuptest',
+                element: <SignUp />,
             },
         ],
     },

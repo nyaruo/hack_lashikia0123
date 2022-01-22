@@ -35,6 +35,12 @@ const Layout = () => {
                             >
                                 ComponentA
                             </Link>
+                            <Link
+                                className="text-sm text-gray-200 hover:bg-gray-700 px-3 py-2 rounded"
+                                to="/signuptest"
+                            >
+                                SignupTest
+                            </Link>
                         </div>
                         <div className="">
                             <LogoutIcon
