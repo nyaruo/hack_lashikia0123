@@ -3,7 +3,7 @@ import { useStateContext } from '../context/StateProvider'
 import Unity, { UnityContent } from 'react-unity-webgl';
 
 const unityContent = new UnityContent(
-    'Build/sample2.json',
+    'Build/SNS_stamp.json',
     'Build/UnityLoader.js'
 );
 
@@ -30,12 +30,12 @@ const ComponentA = () => {
                     <Unity unityContent={unityContent} />
                 </div>
                 <div>
-                    <div style={{ height: "300px" }}></div>
+                    <div style={{ height: "300px", textAlign: 'center' }}></div>
                     <img
                         id="capture"
                         src="TemplateData/dummy.png"
-                        width="240px"
                         height="150px"
+
                     />
                 </div>
             </div>

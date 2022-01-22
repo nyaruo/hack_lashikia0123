@@ -10,9 +10,6 @@ const Layout = () => {
     const [modalOn, setModalOn] = useState(false)
     const location = useLocation()
 
-    const modal = () => {
-        setModalOn((prevState) => (prevState = true))
-    }
     useEffect(() => {
         if (!isLogin) navigate('/login')
     }, [isLogin, navigate])
@@ -44,16 +41,16 @@ const Layout = () => {
                                 className="h-8 w-10 text-gray-200 hover:bg-gray-700 px-1 mr-5 rounded"
                                 aria-hidden="true"
                                 onClick={() => {
-                                    modal()
+                                    setModalOn(true)
                                 }}
                             />
                         </div>
+                        {modalOn ? <Modal setModalOn={setModalOn} /> : null}
                     </div>
                 </nav>
             </header>
             <main>
                 <Outlet />
-                {modalOn ? <Modal setModalOn={setModalOn} /> : null}
             </main>
             {location.pathname === '/' ? null : <Link to="/">Top</Link>}
             <footer className="bg-gray-400 w-screen bottom-0 h-14">
@@ -66,4 +63,3 @@ const Layout = () => {
 }
 
 export default Layout
-
