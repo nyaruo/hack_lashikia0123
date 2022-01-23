@@ -20,20 +20,20 @@ const Layout = () => {
                 <nav className="bg-gray-600 w-screen">
                     <div className="flex justify-between">
                         <div className="">
-                            <span className="font-semibold text-xl tracking-tight text-white">
+                            <span className="font-semibold text-xl tracking-tight text-white w-7">
                                 {serviceName}!!
                             </span>
                             <Link
-                                className="text-sm text-gray-200 hover:bg-gray-700 px-3 py-2 rounded"
+                                className="text-sm text-gray-200 hover:bg-gray-700 px-5 py-2 rounded"
                                 to="/"
                             >
-                                Root
+                                チャット
                             </Link>
                             <Link
                                 className="text-sm text-gray-200 hover:bg-gray-700 px-3 py-2 rounded"
                                 to="/component-a"
                             >
-                                ComponentA
+                                スタンプ・お手紙作成
                             </Link>
                         </div>
                         <div className="">
@@ -55,7 +55,7 @@ const Layout = () => {
             {location.pathname === '/' ? null : <Link to="/">Top</Link>}
             <footer className="bg-gray-400 w-screen bottom-0 h-14">
                 <div className="flex justify-center items-center">
-                    <p className="pt-3">{serviceName}@2021</p>
+                    <p className="pt-3">{serviceName}@2022</p>
                 </div>
             </footer>
         </div>

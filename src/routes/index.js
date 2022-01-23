@@ -1,7 +1,7 @@
 import ComponentA from '../components/ComponentA'
 import Layout from '../components/Layout'
 import Login from '../components/Login'
-import Root from '../components/Root'
+import Chat from '../components/Chat'
 
 export const routePath = [
     { path: '/login', element: <Login /> },
@@ -11,7 +11,7 @@ export const routePath = [
         children: [
             {
                 path: '/',
-                element: <Root />,
+                element: <Chat />,
             },
             {
                 path: '/component-a',
